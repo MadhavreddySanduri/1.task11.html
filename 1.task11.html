@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Container styling for main container */
+        .container {
+            max-width: 900px; 
+            margin-top: 50px;
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        
+        .header {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        
+        .form-box {
+            border: 1px solid #333;
+            padding: 20px;
+            margin-top: 10px;
+            
+        }
+
+        /* Image placeholder styling */
+        .image-placeholder {
+            width: 159px;
+            height: 180px;
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-top: 10px;
+        }
+
+        
+        .inner-circle {
+            width: 100px;
+            height: 125px;
+            border: 1px solid #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 25px; 
+            background-color: #fff;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            white-space: nowrap; 
+        }
+
+       
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        
+        .btn {
+            min-width: 158px;
+            margin: 6px 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>Event 1</h2>
+        <p>Number of available seats: <span>23</span></p>
+    </div>
+
+    <!-- Form box to contain the form elements -->
+    <div class="form-box">
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-center">
+                <div class="image-placeholder">
+                    <div class="inner-circle">
+                        <span>Image</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <form>
+                    <div class="form-group row">
+                        <label for="name" class="col-sm-4 col-form-label" style="padding-left: 26%;">Name:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="name" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-4 col-form-label" style="padding-left: 27%;">Email:</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="phone" class="col-sm-4 col-form-label" style="padding-left: 21%;">Phone No.:</label>
+                        <div class="col-sm-8">
+                            <input type="tel" class="form-control" id="phone" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="seats" class="col-sm-4 col-form-label" style="padding-left: 14%;">Number of seats:</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" id="seats">
+                                <option>1</option>
+                                <option selected>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="attendee2" class="col-sm-4 col-form-label" style="padding-left: 10%;">Name of Attendee 2:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="attendee2" placeholder="">
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-secondary">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
